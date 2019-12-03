@@ -1,0 +1,45 @@
+<html>
+<link rel='stylesheet' href='chatlog.css' type='text/css'>
+<link rel='stylesheet' href='blue_round_button.css' type='text/css'>
+<style>
+#botplatformbox {} #botplatformboxbar {} #botplatformboxbarmax {} #botplatformboxmin {} #botplatformboxmax {} #botplatformboxclose {} #botplatformbubble-text {} #botplatformbox-input {}
+</style>
+<body>
+<iframe src="https://www.barclays.co.uk/" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; ">
+   <!-- Your browser doesn't support iframes -->
+</iframe>
+</body>
+<script type='text/javascript' src='sdk.js'></script>
+<script type='text/javascript'>
+SDK.applicationId = "9019207319408843864";
+SDK.backlinkURL = "http://mmbots.mercurialminds.com/login?affiliate=admin";
+SDK.lang = "ar";
+var sdk = new SDKConnection();
+var web = new WebChatbotListener();
+web.connection = sdk;
+web.instance = "4353";
+web.instanceName = "Barclays Chatbot";
+web.prefix = "botplatform";
+web.caption = "Chat Now";
+web.boxLocation = "bottom-right";
+web.color = "#009900";
+web.background = "#fff";
+web.css = "chatlog.css";
+web.version = 6.0;
+web.bubble = true;
+web.showMenubar = true;
+web.showBoxmax = true;
+web.showSendImage = true;
+web.showChooseLanguage = true;
+web.nativeVoice = true;
+web.nativeVoiceName = "Google UK English Male";
+web.lang = "ar";
+SDK.lang = "ar";
+web.avatar = false;
+web.chatLog = true;
+web.popupURL = "https://mmbots.mercurialminds.com/chat?&id=4353&embedded=true&avatar=false&chatLog=true&facebookLogin=false&showLink=false&application=9019207319408843864&bubble=true&menubar=true&chooseLanguage=true&sendImage=true&background=%23fff&prompt=You+say&send=&css=https://mmbots.mercurialminds.com/css/chatlog.css&language=ar";
+web.createBox();
+</script>
+
+
+</html>
